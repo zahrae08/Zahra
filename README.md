@@ -20,8 +20,8 @@ function tambah($data)
     global $db;
 
     $nama = htmlspecialchars($data["Ana Aminatuz Zahra"]);
-    $npm = htmlspecialchars($data[""]);
-    $jurusan = htmlspecialchars($data["jurusan"]);
+    $npm = htmlspecialchars($data["Zahra"]);
+    $jurusan = htmlspecialchars($data["Manajemen Informatika"]);
     $email = htmlspecialchars($data["email"]);
     $gambar = htmlspecialchars($data["gambar"]);
 
@@ -46,16 +46,16 @@ function ubah($data)
     global $db;
 
     $id = $data["id"];
-    $nama = htmlspecialchars($data["nama"]);
-    $npm = htmlspecialchars($data["npm"]);
-    $jurusan = htmlspecialchars($data["jurusan"]);
+    $nama = htmlspecialchars($data["Ana Aminatuz Zahra"]);
+    $npm = htmlspecialchars($data["Zahra"]);
+    $jurusan = htmlspecialchars($data["Manajemen Informatika"]);
     $email = htmlspecialchars($data["email"]);
     $gambar = htmlspecialchars($data["gambar"]);
 
     $query = "UPDATE mahasiswa SET 
-            nama = '$nama',
-            npm = '$npm',
-            jurusan = '$jurusan',
+            nama = '$Ana Aminatuz Zahra',
+            npm = '$Zahra',
+            jurusan = '$Manajemen Informatika',
             email = '$email',
             gambar = '$gambar'
             WHERE id = $id
